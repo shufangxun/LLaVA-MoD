@@ -141,7 +141,7 @@ For instructions on inference, please refer to the [INFERENCE.md](docs/INFERENCE
 ---
 
 ## 📖 Citation
-If you find our project useful for your research and applications, please star ti and cite the paper using this BibTeX:
+If you find our project useful for your research and applications, please star it and cite the paper using this BibTeX:
 ```BibTeX
 @article{shu2024llava,
   title={LLaVA-MoD: Making LLaVA Tiny via MoE Knowledge Distillation},
