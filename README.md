@@ -24,8 +24,6 @@
 - [🧭 Overview](#-overview)
 - [🛠️ Installation](#-installation)
 - [🗂️ Data Construction](#-data-construction)
-  - [📚 Mimic Distillation](#-mimic-distillation)
-  - [🧠 Preference Distillation](#-preference-distillation)
 - [🏋️‍♂️ Training and Evaluation](#-training-and-evaluation)
 - [🚀 Inference](#-inference)
 - [📖 Citation](#-citation)
