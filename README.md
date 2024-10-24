@@ -17,10 +17,47 @@
 
 🌟 **Star us if you think it's helpful.** Your support means a lot! ⭐️
 
-## Introduction
-LLaVA-MoD is an efficient framework for training small-scale Multimodal Language Models (s-MLLM) by distilling knowledge from larger models (l-MLLM). We address two key challenges: optimizing s-MLLM with a sparse Mixture of Experts (MoE) for efficiency and expressiveness, and implementing a progressive knowledge transfer strategy. This includes mimic distillation, minimizing KL divergence to align s-MLLM with l-MLLM, and preference distillation to enhance s-MLLM beyond l-MLLM in distinguishing example quality, notably improving performance in hallucination benchmarks.
+---
 
-## Installation
+## ✨ Contents
+
+- [🧭 Overview](#-overview)
+- [🛠️ Installation](#-installation)
+- [🗂️ Data Construction](#-data-construction)
+  - [📚 Mimic Distillation](#-mimic-distillation)
+  - [🧠 Preference Distillation](#-preference-distillation)
+- [🏋️‍♂️ Training and Evaluation](#-training-and-evaluation)
+- [🚀 Inference](#-inference)
+- [📖 Citation](#-citation)
+- [🏆 Acknowledgement](#-acknowledgement)
+- [📄 License](#-license)
+
+---
+
+## 🧭 Overview
+
+**<b>TL; DR:</b>** LLaVA-MOD is an efficient framework for training small-scale Multimodal Language Models by distilling knowledge from larger models.
+
+<details>
+  <summary>🚀 <b>CLICK for the full abstract</b></summary>
+
+We introduce **LLaVA-MoD**, a novel framework designed to enable the efficient training of small-scale Multimodal Language Models by distilling knowledge from large-scale MLLM. Our approach addresses two fundamental challenges in MLLM distillation:
+
+- **Network Optimization**: We enhance the s-MLLM structure by integrating a sparse Mixture of Experts (MoE) architecture, balancing computational efficiency and model expressiveness.
+  
+- **Progressive Knowledge Transfer**: We propose a two-stage transfer strategy:
+  1. **Mimic Distillation**: Minimizing Kullback-Leibler (KL) divergence between output distributions to help the student model emulate the teacher's understanding.
+  2. **Preference Distillation**: Using Direct Preference Optimization (DPO), where the student model learns to outperform the teacher, especially in hallucination benchmarks.
+
+Extensive experiments show **LLaVA-MoD** outperforms existing models across multimodal benchmarks while activating only a minimal number of parameters and keeping computational costs low. With **only 2B activated parameters**, **LLaVA-MoD** surpasses **Qwen-VL-Chat-7B** by an average of **8.8%**, using merely **0.3% of the training data** and **23% trainable parameters**.
+
+These results highlight **LLaVA-MoD**’s success in distilling comprehensive knowledge from its teacher model, making it a groundbreaking solution for developing more efficient MLLMs.
+</details>
+
+---
+
+## 🛠️ Installation
+
 1. First install `anaconda`, and install `torch`, We recommend installing `torch==2.1.2` and `cuda==11.8`.
 
 ```bash
@@ -32,10 +69,10 @@ pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https
 ```bash
 pip install -r requirements.txt
 ```
+---
 
-
-## Data Construction
-### Mimic Distillation
+## 🗂️ Data Construction
+### 📚 Mimic Distillation
 We follow LLaVA to construct the data as following format:
 ```json
 {
@@ -62,7 +99,7 @@ We follow LLaVA to construct the data as following format:
 }
 ```
 
-### Preference Distillation
+### 🧠 Preference Distillation
 We follow RLAIF-V to construct the data as following format:
 ```json
 {
@@ -91,21 +128,21 @@ We follow RLAIF-V to construct the data as following format:
 }
 ```
 
+---
 
+## 🏋️‍♂️ Training and Evaluation
 
+The full details for training and evaluation can be found in the [TRAIN_EVAL.md](docs/TRAIN_EVAL.md).
 
+---
 
-## Training and Evaluation
+## 🚀 Inference
 
-The training & evaluation are in [TRAIN_EVAL.md](docs/TRAIN_EVAL.md).
+For instructions on inference, please refer to the [INFERENCE.md](docs/INFERENCE.md).
 
-## Inference
+---
 
-The inference is in [INFERENCE.md](docs/INFERENCE.md).
-
-
-
-## Citation
+## 📖 Citation
 If you find our project useful for your research and applications, please star ti and cite the paper using this BibTeX:
 ```BibTeX
 @article{shu2024llava,
@@ -115,14 +152,13 @@ If you find our project useful for your research and applications, please star t
   year={2024}
 }
 ```
+---
 
+## 🏆 Acknowledgement
+Our project is built upon [MoE-LLaVA](https://github.com/PKU-YuanGroup/MoE-LLaVA) and [LLaVA](https://github.com/haotian-liu/LLaVA). We are deeply grateful for the excellent codebase they provide. Additionally, we express our appreciation to [MobileVLM](https://github.com/Meituan-AutoML/MobileVLM) and [RLAIF-V](https://github.com/RLHF-V/RLAIF-V) for their meticulously processed datasets. Their contributions have been of immeasurable value in shaping our work.
 
-## Acknowledgement
-Our project is built upon [MoE-LLaVA](https://github.com/PKU-YuanGroup/MoE-LLaVA) and [LLaVA](https://github.com/haotian-liu/LLaVA). We are deeply grateful for the excellent codebase they provide. Additionally, we express our appreciation to [MobileVLM](https://github.com/Meituan-AutoML/MobileVLM) and [RLAIF-V](https://github.com/RLHF-V/RLAIF-V) for  their meticulously processed datasets. Their contributions have been of immeasurable value in shaping our work.
+---
 
-
-
-
-## License
+## 📄 License
 Our project is released under the Apache 2.0 license.
 
