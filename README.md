@@ -1,11 +1,21 @@
 # <div align="center">LLaVA-MoD: Making LLaVA Tiny via MoE Knowledge Distillation<div>
 
 <div align="center">
-  [![arXiv](https://img.shields.io/badge/Arxiv-2408.15881-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.15881) &ensp;
-  [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](https://github.com/shufangxun/LLaVA-MoD/blob/main/LICENSE) &ensp;
-  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshufangxun%2FLLaVA-MoD&count_bg=%2379C83D&title_bg=%23555555&icon=trustpilot.svg&icon_color=%23E7E7E7&title=Visitor&edge_flat=false)](https://hits.seeyoufarm.com) &ensp;
+<!-- [![arXiv](https://img.shields.io/badge/Arxiv-2408.15881-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2408.15881) -->
+  <a href="[https://arxiv.org/abs/2408.15881](https://arxiv.org/abs/2408.15881)"><img src="https://img.shields.io/static/v1?label=Paper&message=Arxiv:LLaVA-MOD&color=red&logo=arxiv"></a>
+  
+  [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](https://github.com/shufangxun/LLaVA-MoD/blob/main/LICENSE)
+  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fshufangxun%2FLLaVA-MoD&count_bg=%2379C83D&title_bg=%23555555&icon=trustpilot.svg&icon_color=%23E7E7E7&title=Visitor&edge_flat=false)](https://hits.seeyoufarm.com)
 </div>
 
+---
+
+## 📢 News
+- 🚀 **[Oct. 24, 2024.]**
+  - **🎉 Big News!** We are thrilled to announce the release of **LLaVA-MOD**! 🎊.
+  - 🔮 Stay tuned for the upcoming release of models — more exciting features are on the way! 💡
+
+🌟 **Star us if you think it's helpful.** Your support means a lot! ⭐️
 
 ## Introduction
 LLaVA-MoD is an efficient framework for training small-scale Multimodal Language Models (s-MLLM) by distilling knowledge from larger models (l-MLLM). We address two key challenges: optimizing s-MLLM with a sparse Mixture of Experts (MoE) for efficiency and expressiveness, and implementing a progressive knowledge transfer strategy. This includes mimic distillation, minimizing KL divergence to align s-MLLM with l-MLLM, and preference distillation to enhance s-MLLM beyond l-MLLM in distinguishing example quality, notably improving performance in hallucination benchmarks.
