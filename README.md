@@ -34,7 +34,7 @@
 
 ## 🧭 Overview
 
-**<b>TL; DR:</b>** LLaVA-MOD is an efficient framework for training small-scale Multimodal Language Models by distilling knowledge from larger models.
+**<b>TL; DR:</b>** LLaVA-MoD is an efficient framework for training small-scale Multimodal Language Models by distilling knowledge from larger models.
 
 <details>
   <summary>🚀 <b>CLICK for the full abstract</b></summary>
@@ -129,13 +129,11 @@ We follow RLAIF-V to construct the data as following format:
 ---
 
 ## 🏋️‍♂️ Training and Evaluation
-
 The full details for training and evaluation can be found in the [TRAIN_EVAL.md](docs/TRAIN_EVAL.md).
 
 ---
 
 ## 🚀 Inference
-
 For instructions on inference, please refer to the [INFERENCE.md](docs/INFERENCE.md).
 
 ---
@@ -143,7 +141,7 @@ For instructions on inference, please refer to the [INFERENCE.md](docs/INFERENCE
 ## 📖 Citation
 If you find our project useful for your research and applications, please star it and cite the paper using this BibTeX:
 ```BibTeX
-@article{shu2024llava,
+@article{shu2024llavamod,
   title={LLaVA-MoD: Making LLaVA Tiny via MoE Knowledge Distillation},
   author={Shu, Fangxun and Liao, Yue and Zhuo, Le and Xu, Chenning and Zhang, Lei and Zhang, Guanghao and Shi, Haonan and Chen, Long and Zhong, Tao and He, Wanggui and Fu, Siming and others},
   journal={arXiv preprint arXiv:2408.15881},
