@@ -11,9 +11,9 @@
 ---
 
 ## 📢 News
-- Dec 24, 2024: 🔥 Code released.
+- Dec 24, 2024: 🔥 Training and evaluation codes are released.
 - Aug 28, 2024: 🤗 LLaVA-MoD is featured on [Huggingface Daily Papers](https://huggingface.co/papers/2408.15881).
-- Aug 28, 2024: 📖 Paper available on [Arxiv](https://arxiv.org/pdf/2408.15881). 
+- Aug 28, 2024: 📖 Paper is available on [Arxiv](https://arxiv.org/pdf/2408.15881). 
 
 🌟 **Star us if you think it's helpful.** Your support means a lot! ⭐️
 
