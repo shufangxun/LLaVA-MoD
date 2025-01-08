@@ -11,9 +11,9 @@
 ---
 
 ## 📢 News
-- 🚀 **[Oct. 24, 2024.]**
-  - **🎉 Big News!** We are thrilled to announce the release of **LLaVA-MOD**! 🎊.
-  - 🔮 Stay tuned for the upcoming release of models — more exciting features are on the way! 💡
+- Dec 24, 2024: 🔥 Code released.
+- Aug 28, 2024: 🤗 LLaVA-MoD is featured on [Huggingface Daily Papers](https://huggingface.co/papers/2408.15881).
+- Aug 28, 2024: 📖 Paper available on [Arxiv](https://arxiv.org/pdf/2408.15881). 
 
 🌟 **Star us if you think it's helpful.** Your support means a lot! ⭐️
 
