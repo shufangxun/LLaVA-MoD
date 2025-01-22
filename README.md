@@ -11,7 +11,7 @@
 ---
 
 ## 📢 News
-- Jan 23, 2025: 🔥 LLaVA-MoD is accepted by ICLR2025.
+- Jan 23, 2025: 🔥 LLaVA-MoD is accepted by ICLR 2025.
 - Dec 24, 2024: 🏋️‍♀️ Training and evaluation codes are released.
 - Aug 28, 2024: 🤗 LLaVA-MoD is featured on [Huggingface Daily Papers](https://huggingface.co/papers/2408.15881).
 - Aug 28, 2024: 📖 Paper is available on [Arxiv](https://arxiv.org/pdf/2408.15881). 
